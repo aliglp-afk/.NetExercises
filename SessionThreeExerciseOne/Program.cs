@@ -3,7 +3,6 @@ namespace SessionThreeExerciseOne{
     class Program{
         public static void Main(string[] args){
             while(true){
-                //this is a test
                 Console.WriteLine("Input rows: (q for quit)");
                 string input=Console.ReadLine();    
                 if(input=="q")
@@ -20,11 +19,11 @@ namespace SessionThreeExerciseOne{
                     {
                         Console.Write(j%10);
                     }
-                    for(int j=1;j<=row-i;j++){
-                        Console.Write(" ");
-                    }
                     Console.WriteLine();
                 }
+
+                Console.WriteLine($"Test Checkout");
+                
             }
         }
     }
