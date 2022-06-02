@@ -36,8 +36,6 @@ namespace ExerciseFive
             get { return _dailyWage; }
             set { _dailyWage = value*WorkingHour; }
         }
-        
-
         public Employee(string name,int workingHour,int salary)
         {
             Name=name;
@@ -48,7 +46,12 @@ namespace ExerciseFive
         }
 
         public string GetResult(){
-            return $"{Name}\t{WorkingHour}\t{Salary}\t{DailyWage}\t{MonthlyWage}";
+            string result="";
+            result+=$"Name: {Name}\n";
+            result+=$"Haghzahmeh: {Salary}\n";
+            result+=$"saatKarDarroz: {WorkingHour}\n";
+            result+=$"daramad mahiuane: {MonthlyWage}\n";
+            return result;
         }
         
     }
