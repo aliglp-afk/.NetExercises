@@ -27,7 +27,7 @@ namespace ExerciseFive
         public int MonthlyWage
         {
             get { return _monthlyWage; }
-            set { _monthlyWage = value*WorkingHour*30; }
+            set { _monthlyWage = value*WorkingHour*24; }
         }
         
         private int _dailyWage;
